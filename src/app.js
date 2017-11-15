@@ -18,6 +18,10 @@ const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
+const connectToDatabase = require('./connectToDatabase')
+
+connectToDatabase()
+
 const app = express(feathers());
 
 // Load app configuration
