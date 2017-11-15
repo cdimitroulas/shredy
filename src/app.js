@@ -18,9 +18,7 @@ const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
-const connectToDatabase = require('./connectToDatabase')
-
-connectToDatabase()
+const mongoose = require('./mongoose');
 
 const app = express(feathers());
 
@@ -39,6 +37,8 @@ app.use('/', express.static(app.get('public')));
 // Set up Plugins and providers
 app.configure(rest());
 app.configure(socketio());
+
+app.configure(mongoose);
 
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);

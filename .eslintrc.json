@@ -4,7 +4,7 @@
     "node": true,
     "mocha": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:node/recommended"]
   "rules": {
     "indent": [
       "error",
@@ -17,10 +17,6 @@
     "quotes": [
       "error",
       "single"
-    ],
-    "semi": [
-      "error",
-      "always"
     ]
   }
 }
