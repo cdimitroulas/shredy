@@ -7,10 +7,10 @@ module.exports = function (app) {
     useMongoClient: true
   })
     .then(() => {
-      console.log(`Connected to db at ${app.get('mongodb')}`)
+      console.log(`Connected to db at ${app.get('mongodb')}`) // eslint-disable-line
     })
     .catch(error => {
-      console.log(`Error connecting to mongodb: ${error.message}`)
+      console.log(`Error connecting to mongodb: ${error.message}`) // eslint-disable-line
     });
 
 
