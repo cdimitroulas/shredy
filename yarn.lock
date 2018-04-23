@@ -41,7 +41,7 @@
     passport "^0.4.0"
     uuid "^3.1.0"
 
-"@feathersjs/commons@^1.2.0", "@feathersjs/commons@^1.4.0":
+"@feathersjs/commons@^1.2.0", "@feathersjs/commons@^1.3.0", "@feathersjs/commons@^1.4.0":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-1.4.1.tgz#81f19ffb83eac6afd33c629d4d0cad57441fbede"
 
@@ -52,13 +52,13 @@
     config "^1.27.0"
     debug "^3.1.0"
 
-"@feathersjs/errors@^3.0.0":
+"@feathersjs/errors@^3.0.0", "@feathersjs/errors@^3.2.0", "@feathersjs/errors@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.0.tgz#c5fcc163f49d6b139f10d118eec36e8f90818aff"
   dependencies:
     debug "^3.1.0"
 
-"@feathersjs/express@^1.1.1":
+"@feathersjs/express@^1.2.1":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@feathersjs/express/-/express-1.2.2.tgz#468cfcdca1ef7b1d450e5cfd9dfdb1bc594dc805"
   dependencies:
@@ -68,7 +68,7 @@
     express "^4.16.2"
     uberproto "^1.2.0"
 
-"@feathersjs/feathers@^3.0.0":
+"@feathersjs/feathers@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/feathers/-/feathers-3.1.4.tgz#474662a65525c3f9ac935669bed3af440fbed784"
   dependencies:
@@ -86,7 +86,7 @@
     lodash "^4.17.4"
     url-pattern "^1.0.3"
 
-"@feathersjs/socketio@^3.0.0":
+"@feathersjs/socketio@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@feathersjs/socketio/-/socketio-3.2.1.tgz#194b99e4281573195c5801e8fe43f194247659b8"
   dependencies:
@@ -741,7 +741,7 @@ debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@3.1.0, debug@^3.0.0, debug@^3.1.0, debug@~3.1.0:
+debug@3.1.0, debug@^3.1.0, debug@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -1155,31 +1155,14 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-feathers-commons@^0.8.0, feathers-commons@^0.8.4:
-  version "0.8.7"
-  resolved "https://registry.yarnpkg.com/feathers-commons/-/feathers-commons-0.8.7.tgz#11c6f25b537745a983e8d61552d7db8932d53782"
-
-feathers-errors@^2.0.1:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/feathers-errors/-/feathers-errors-2.9.2.tgz#96ca0e5fe50cc56f0eccc90ce3fa5e1f8840828d"
+feathers-mongoose@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/feathers-mongoose/-/feathers-mongoose-6.1.1.tgz#c5b15ea7364fe96c0cbb7c825163c8b792c51876"
   dependencies:
-    debug "^3.0.0"
-
-feathers-mongoose@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/feathers-mongoose/-/feathers-mongoose-5.1.2.tgz#8d30897e8e670edbde503f9ae7695c1f453215fe"
-  dependencies:
-    feathers-commons "^0.8.4"
-    feathers-errors "^2.0.1"
-    feathers-query-filters "^2.1.2"
+    "@feathersjs/commons" "^1.3.0"
+    "@feathersjs/errors" "^3.2.0"
     lodash.omit "^4.3.0"
     uberproto "^1.2.0"
-
-feathers-query-filters@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/feathers-query-filters/-/feathers-query-filters-2.1.2.tgz#cdb18224db5e19cc0140d528108e0908d5eb0654"
-  dependencies:
-    feathers-commons "^0.8.0"
 
 figures@^2.0.0:
   version "2.0.0"
