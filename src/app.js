@@ -20,6 +20,8 @@ const channels = require('./channels');
 
 const mongoose = require('./mongoose');
 
+const authentication = require('./authentication');
+
 const app = express(feathers());
 
 // Load app configuration
@@ -41,6 +43,7 @@ app.configure(socketio());
 app.configure(mongoose);
 
 app.configure(middleware);
+app.configure(authentication);
 app.configure(services);
 app.configure(channels);
 app.use(notFound());
